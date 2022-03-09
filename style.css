@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: #c31432; 
+    background: -webkit-linear-gradient(to bottom, #240b36, #c31432);
+    background: linear-gradient(to bottom, #240b36, #c31432);
+}
+
+.box_grid{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: minmax(7rem, auto) repeat(5, 4.5rem);
+    grid-template-columns: repeat(4, 4.5rem);
+}
+
+.span-dos{
+    grid-column: span 2;
+}
+
+.numerosIngresados{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: .5rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.numeroPrevio{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .5);
+}
+
+.numeroActual{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+button{
+    font-size: 1.7rem;
+    padding: .5rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
